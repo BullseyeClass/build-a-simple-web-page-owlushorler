@@ -1,0 +1,96 @@
+:root {
+  --b: gold;
+  --primary:black;
+  --second: white;
+  --lo: blue;
+  --tt:purple;
+  --p: green;
+
+  
+}
+body {
+  background: var(--b)
+}
+
+.lov{
+  --primary:white;
+  --second: black;
+  --lo: black;
+  --b: black;
+  --p: white;
+}
+
+.ho{
+  background-color: var(--primary)
+}
+.one, .on {
+  color:var(--primary);
+  display: flex;
+  flex-direction: row;
+ justify-content: space-around;
+ background-color: var(--lo)
+
+}
+.tt{
+  background: var(--tt);
+  margin: 20px;
+  width: 60px;
+  color: var(--second)
+}
+.two {
+  color: var(--primary)
+}
+
+.h{
+  color:var(--primary);
+  text-align: center
+}
+
+/*calculator*/
+
+.cal{
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  gap: 10px;
+  background: pink
+}
+.ca{
+ background: var(--p);
+ text-align: center;
+}
+
+.book,.bookk{
+  color: var(--primary)
+}
+
+.cc {
+  width: 230px;
+  justify-content: center;
+    box-shadow: 10px 10px 1px var(--primary);
+height: 220px
+}
+
+
+/*game<*/
+
+.hop {
+  width: 230px;
+  box-shadow: 10px 10px;
+  color: var(--primary);
+  background-color: var(--tt);
+ 
+ margin-left: -200px
+  
+  
+}
+
+.bu{
+  width: 100px;
+  margin: 10px
+}
+
+.part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
