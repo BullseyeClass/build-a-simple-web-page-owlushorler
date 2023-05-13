@@ -5,11 +5,14 @@
   --lo: blue;
   --tt:purple;
   --p: green;
+  --opp: url(image/download.jpg)
 
   
 }
 body {
-  background: var(--b)
+ /* background: var(--b)*/
+background: var(--b) ;
+
 }
 
 .lov{
@@ -18,6 +21,7 @@ body {
   --lo: black;
   --b: black;
   --p: white;
+  
 }
 
 .ho{
@@ -79,7 +83,7 @@ height: 220px
   color: var(--primary);
   background-color: var(--tt);
  
- margin-left: -200px
+
   
   
 }

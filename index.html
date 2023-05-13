@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
+  <title>project</title>
   
   <!-- HTML -->
   
@@ -18,7 +18,7 @@
   <button  class="dark" onclick="lam()">mode</button>
   
   <div class="one">
-        <h2>my portfolio </h2>
+       <!-- <h2>my portfolio </h2>-->
         <h3>home</h3>
         <h3>games</h3>
         <h3>subscribe</h3>
@@ -27,14 +27,14 @@
   </div>
   
   <nav class="two">
-    <button class="tt" disabled>html</button>
-    <button class="tt" disabled>css</button>
-    <button class="tt" disabled>js</button>
+    <button class="tt" > <a href="facebook.com">google</a> </button>
+    <button class="tt" >css</button>
+    <button class="tt" >js</button>
     
    
   </nav>
   
-  <h1 class="h">NEW JS PROJECTS</h1>
+ <!-- <h1 class="h">NEW JS PROJECTS</h1> -->
   <h4 class="h">welcome as you explore</h4>
   <section class="part">
     
@@ -70,14 +70,14 @@
   
   <!-- game -->
   <nav class="hop"  >
-    <h1 style="text-align: center">game</h1>
+     <h1 style="text-align: center">game</h1>
  
-   <div style= "display: flex; flex-direction: row; justify-content: center;">
+    <div style= "display: flex; flex-direction: row; justify-content: center;">
     
     <h1>play  head and tail game </h1>
 
     </div>
-<div style= "display: flex; flex-direction: row; justify-content: center;">
+    <div style= "display: flex; flex-direction: row; justify-content: center;">
     <h4> <span style="color: brown;">instruction :</span> if you guess and pick the 
         same as the computer you won if not you loss and your score will be recorded </h4>
     </div>
@@ -96,8 +96,79 @@
 
 
 
-</mav>
+  </nav>
   
   <script src="main.js"></script>
+
+
+
+
+  <body> 
+    <style>
+        .pp{
+            background-color: green;
+            color: white;
+            
+        }
+        .sp {
+            margin-left: 150px;
+        }
+        .we{
+            background-color: red;
+            margin-left: 40px;
+        }
+        .ala {
+            width: 500px;
+            height: 300px;
+            background-color: yellow;
+            box-shadow: 10px 10px 10px red;
+            
+        }
+    </style>
+   
+    <div class="ala">
+      <h1 style="text-align: center; color: blue;"  >  todo list</h1>
+    <input class="jo" type="text">
+    <input class="popo" type="date">
+    <button class="pp" onclick="mol()">enter</button>
+    <div class="bb"></div>
+    </div>  
+
+<script>
+let todo = [ {
+    
+}
+];
+
+function love(){
+   
+    koll = [];
+    
+for (i=0;i < todo.length;i++){
+    kol = todo[i]
+    name = kol.name
+    date=kol.date
+    
+    koll  += `<p>${name} <span class="sp"> ${date}</span>
+          <button class='we' onclick='
+        todo.splice(${i}, 1)
+         love();' > delet</button> </p>`
+}let html = document.querySelector('.bb')
+    html.innerHTML = koll
+}
+
+function mol() {
+let ele = document.querySelector('.jo')
+low = ele.value
+datee = document.querySelector('.popo')
+da = datee.value
+todo.push({name: low,
+date:da})
+love()
+}
+
+</script>
+
+
 </body>
 </html>
